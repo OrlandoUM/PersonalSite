@@ -1,127 +1,162 @@
-body{
-	margin: 0;
-	font-family: 'Inconsolata', monospace;
-	background: #D3D8DB; /*5D6D7E*/
+#Page{
+    overflow: auto;
+    flex-flow: row wrap;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #c5d1d4;
 }
 
-.imgHeader{ /*Foto de Fundo*/
-	height: 500px;
-	width: 100%;
-	border-bottom: 10px solid transparent;
-	border-color: #AAACAD;
+/* ------------ Cabeçalho ------------- */
+#Marco-Zero{
+    position: absolute;
+    height: 380;
+    width: 100%;
+    border-bottom: 10px solid transparent;
+    border-color: #96a1a3;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
-.imgProfile{ /*FOTO PERFIL*/
-	border: 10px solid transparent;
-	border-color: #AAACAD;
-	vertical-align: center;
-	position: absolute;
-	border-radius: 50%;
-	transform:translate(-50%, -85%);
-	height: 200px;
-	width: 200px;
+#Container-foto-perfil{
+    text-align: center;
+    width: 100%;
+    display: block;
+    top: 100;
 }
 
-.container-header{
-	position: relative;
-	text-align: center;
-	color: white;
+#Foto-Perfil{
+    position: relative;
+    top: 270;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-color: #96a1a3;
 }
 
-#centered-header{ /*ORLADO UCHOA MOURA*/
-	position: absolute;
-	font-size: 80px;
-	top: 120px;
-	vertical-align: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	min-width: 457px;
+/* --------------MÍDIA SOCIAL--------------- */
+
+#corpo{
+    position: relative;
+    padding-top: 300;
 }
 
-#facebook_icon{
-	position: absolute;
-	vertical-align: center;
-	width: 50px;
-	height: 50px;
-	transform:translate(-550%, 100%);
+.Container-social-media{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
 }
 
-#instagram_icon{
-	position: absolute;
-	vertical-align: center;
-	width: 50px;
-	height: 50px;
-	transform: translate(-300%, 100%);
+.space-around{
+    justify-content: space-evenly;
 }
 
-#linkedin-icon{
-	position: absolute;
-	vertical-align: center;
-	width: 50px;
-	height: 50px;
-	transform: translate(-50%, 100%);
+.icon-social-media{
+    height: 60;
+    width: 60;
 }
 
-#skype-icon{
-	position: absolute;
-	vertical-align: center;
-	width: 60px;
-	height: 60px;
-	transform: translate(150%, 78%);
+/* ------------------ ABOUT ----------------- */
+
+#about-container{
+    padding-top: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-#github-icon{
-	position: absolute;
-	vertical-align: center;
-	width: 50px;
-	height: 50px;
-	transform: translate(420%, 100%);
+#about--block{
+    padding-left: 10;
+    padding-right: 10;
+    width: 60%;
 }
 
-.container-body{
-	position: relative;
-	text-align: center;
+#about-text{
+    text-align: center;
+    color: #26535c;
 }
 
-.About_Header{
-	position: absolute;
-	font-size: 45px;
-	top: 720px;
-	text-align: left;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-	margin: auto;
-	transform: translate(0%, 0%);
-	text-align: center;
-	color: #FFFFFF;
+/* -------------- Profissoes -------------- */
+
+#container--geral-profissoes{
+    padding-top: 50;
+    margin-left: 7%;
+    margin-right: 7%;
+    
+    /*background-color: red;*/
 }
 
-.GeneralLine{
-	border: 1px solid;
-	border-color: #FFFFFF;
-	transform: translate(0%, 13000%);
-	width: 85%;
+.proff{
+    justify-content: stretch;
+    display: flex;
+    width: 100%;
+    min-height: 200;
 }
 
-.AboutMeText{
-	position: absolute;
-	width: 70%;
-	margin-left: 15%;
-	top: 790px;
-	transform: translate(0%, 0%);
-	color: #FFFFFF;
-	text-align: center;
-	font-size: 30px;
-	line-height: 1.2;
+.three{
+    
+    background-color: blue;
 }
 
-#location{
-	height: 500px;
-	width: 100%;
-	position: absolute;
-	top: 650px;
-	filter: brightness(32%);
+.box-text-proff{
+    display: flex;
+    width: 65%;
 }
 
+.text-proff-one{
+    align-items: center;
+    width: 65%;
+    padding-right: 5%;
+}
+
+.text-proff-direction-to-left{
+    margin-left: 10%;
+    color: #26535c;
+    direction: rtl;
+}
+
+.box-image-proff{
+    align-items: center;
+}
+
+.image-prof-one{
+    width: 35%;
+    display: flex;
+    margin-left: 5%;
+}
+
+.proff-img{
+    width: 115;
+    height: 115;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-color: #96a1a3;
+}
+
+
+.text-proff-two{
+    align-items: center;
+    padding-left: 5%;
+    width: 65%;
+}
+
+.text-proff-direction-to-right{
+    margin-right: 10%;
+    color: #26535c;
+}
+
+.image-prof-two{
+    width: 35%;
+    display: flex;
+    direction: rtl;
+    margin-right: 5%;
+}
+
+/*#teste{
+    background-color: red;
+    width: 100%;
+    height: 50;
+}*/
